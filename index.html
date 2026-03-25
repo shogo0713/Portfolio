@@ -1,144 +1,97 @@
 <!DOCTYPE html>
 <html lang="ja">
+
+<!-- head部分 -->
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ポートフォリオサイト</title>
-  <meta name="description" content="活動経歴や開発経歴をまとめたポートフォリオサイトです。" />
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="活動経歴や開発経歴をまとめたポートフォリオサイト" />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
+<!-- body部分 -->
+
 <body>
-  <header>
-    <h1>サイトタイトル</h1>
-    <p>サイトの簡単な説明文をここに書く</p>
 
-    <nav>
-      <ul>
-        <li><a href="#about">自己紹介</a></li>
-        <li><a href="#skills">スキル</a></li>
-        <li><a href="#history">活動経歴</a></li>
-        <li><a href="#projects">開発実績</a></li>
-        <li><a href="#works">制作物一覧</a></li>
-        <li><a href="#future">今後やりたいこと</a></li>
-        <li><a href="#contact">連絡先</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- header部分 -->
 
-  <main>
-    <section id="about">
-      <h2>自己紹介</h2>
-      <p>
-        ここに自己紹介文を入れる
-      </p>
-    </section>
+    <header>
+        <div class="header-inner">
+            <h1>私のポートフォリオ</h1>
+            <p>自己紹介や活動経歴をまとめたポートフォリオサイト</p>
 
-    <section id="skills">
-      <h2>スキル</h2>
+            <div class="border"></div>
 
-      <h3>言語</h3>
-      <ul>
-        <li>スキル名</li>
-        <li>スキル名</li>
-        <li>スキル名</li>
-      </ul>
+            <ul class="list">
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#skills">スキル</a></li>
+                <li><a href="#history">活動経歴</a></li>
+                <li><a href="#works">制作物一覧</a></li>
+                <li><a href="#future">今後やりたいこと</a></li>
+            </ul>
 
-      <h3>フレームワーク・ツール</h3>
-      <ul>
-        <li>ツール名</li>
-        <li>ツール名</li>
-        <li>ツール名</li>
-      </ul>
-    </section>
+            <div class="border"></div>
+        </div>
+    </header>
 
-    <section id="history">
-      <h2>活動経歴</h2>
+  <!-- main部分 -->
 
-      <article>
-        <h3>年・時期</h3>
-        <ul>
-          <li>活動内容を書く</li>
-          <li>活動内容を書く</li>
-          <li>活動内容を書く</li>
-        </ul>
-      </article>
+    <main>
+    <div class="page-card">
+        <section id="about">
+            <h2 class="eyebrow">自己紹介</h2>
+            <p class="lead">
+                (広く)エンジニア志望の学生です。情報工学を学ぶ学生で、特にコンピュータネットワークの分野に関心があります。これまでに Java や Python を用いた簡単な開発に取り組んできました。今後は、セキュリティも意識した Web アプリケーション開発に携わりたいと考えています。
+            </p>
+        </section>
 
-      <article>
-        <h3>年・時期</h3>
-        <ul>
-          <li>活動内容を書く</li>
-          <li>活動内容を書く</li>
-          <li>活動内容を書く</li>
-        </ul>
-      </article>
-    </section>
+        <section id="skills">
+            <h2 class="eyebrow">スキル</h2>
 
-    <section id="projects">
-      <h2>開発実績</h2>
+            <h3>言語</h3>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>TypeScript</li>
+                <li>SQL</li>
+            </ul>
 
-      <article>
-        <h3>プロジェクト名</h3>
-        <p><strong>概要:</strong> プロジェクトの概要を書く</p>
-        <p><strong>使用技術:</strong> 使用技術を書く</p>
-        <p><strong>担当内容:</strong> 担当した内容を書く</p>
-        <p><strong>工夫した点:</strong> 工夫した点を書く</p>
-        <p>
-          <a href="#">GitHubリンク</a> |
-          <a href="#">公開ページリンク</a>
-        </p>
-      </article>
+            <h3>フレームワーク・ツール</h3>
+            <ul>
+                <li>React</li>
+            </ul>
+        </section>
 
-      <article>
-        <h3>プロジェクト名</h3>
-        <p><strong>概要:</strong> プロジェクトの概要を書く</p>
-        <p><strong>使用技術:</strong> 使用技術を書く</p>
-        <p><strong>担当内容:</strong> 担当した内容を書く</p>
-        <p><strong>工夫した点:</strong> 工夫した点を書く</p>
-        <p>
-          <a href="#">GitHubリンク</a> |
-          <a href="#">公開ページリンク</a>
-        </p>
-      </article>
-    </section>
+        <section id="history">
+            <h2 class="eyebrow">活動経歴</h2>
+                <ul>
+                    <li>現在、ネットワーク系の研究室で研究を行っています。</li>
+                </ul>
 
-    <section id="works">
-      <h2>制作物一覧</h2>
-      <ul>
-        <li>
-          <h3>制作物名</h3>
-          <p>制作物の説明を書く</p>
-        </li>
-        <li>
-          <h3>制作物名</h3>
-          <p>制作物の説明を書く</p>
-        </li>
-        <li>
-          <h3>制作物名</h3>
-          <p>制作物の説明を書く</p>
-        </li>
-      </ul>
-    </section>
+        </section>
 
-    <section id="future">
-      <h2>今後やりたいこと</h2>
-      <ul>
-        <li>今後取り組みたいことを書く</li>
-        <li>今後取り組みたいことを書く</li>
-        <li>今後取り組みたいことを書く</li>
-      </ul>
-    </section>
+        <section id="works">
+            <h2 class="eyebrow">制作物一覧</h2>
+            <ul>
+                <li>製作中</li>
+            </ul>
+        </section>
 
-    <section id="contact">
-      <h2>連絡先</h2>
-      <ul>
-        <li>Email: メールアドレスを入れる</li>
-        <li>GitHub: <a href="#">GitHubのURLを入れる</a></li>
-        <li>X / SNS: <a href="#">SNSのURLを入れる</a></li>
-      </ul>
-    </section>
-  </main>
+        <section id="future">
+            <h2 class="eyebrow">今後やりたいこと</h2>
+            <ul>
+                <li>モダンなWebアプリケーションの開発</li>
+                <li>ネットワークシステムの研究</li>
+            </ul>
+        </section>
+    </div>
+    </main>
 
-  <footer>
-    <p>&copy; 20XX サイト名</p>
-  </footer>
+    <footer>
+        <p>&copy; 2026. Portfolio . All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
