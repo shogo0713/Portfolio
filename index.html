@@ -9,7 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="活動経歴や開発経歴をまとめたポートフォリオサイト" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -20,22 +23,21 @@
   <!-- header部分 -->
 
     <header>
-        <div class="header-inner">
-            <h1>私のポートフォリオ</h1>
-            <p>自己紹介や活動経歴をまとめたポートフォリオサイト</p>
-
-            <div class="border"></div>
-
-            <ul class="list">
-                <li><a href="#about">自己紹介</a></li>
-                <li><a href="#skills">スキル</a></li>
-                <li><a href="#history">活動経歴</a></li>
-                <li><a href="#works">制作物一覧</a></li>
-                <li><a href="#future">今後やりたいこと</a></li>
-            </ul>
-
-            <div class="border"></div>
+    <div class="header-inner">
+        <div class="header-brand">
+        <h1>Portfolio</h1>
+        <span class="header-tagline">エンジニア志望・コンピュータサイエンス</span>
         </div>
+        <nav aria-label="ページ内ナビゲーション">
+        <ul class="list">
+            <li><a href="#about">自己紹介</a></li>
+            <li><a href="#skills">スキル</a></li>
+            <li><a href="#history">活動経歴</a></li>
+            <li><a href="#works">制作物</a></li>
+            <li><a href="#future">今後</a></li>
+        </ul>
+        </nav>
+    </div>
     </header>
 
   <!-- main部分 -->
@@ -45,10 +47,10 @@
         <section id="about">
             <h2 class="eyebrow">自己紹介</h2>
             <p class="lead">
-                (広く)エンジニア志望の学生です。
-                関西の大学で情報工学を学んでおり、特にコンピュータネットワークの分野に関心があります。
-                これまでに大学の実験でJavaを用いた簡単なプログラムの作成や、個人的にJavaScriptやReactを用いたWeb開発に取り組んできました。
-                今後は、セキュリティも意識したWebアプリケーション開発に携わりたいと考えています。
+                エンジニア志望の学生です。
+                関西の大学でコンピュータサイエンスを学んでおり、特にネットワークの分野に関心があります。
+                これまでに、大学の実験でJavaを用いた簡単なプログラムの作成や、個人的にJavaScriptやReactを用いたWeb開発に取り組んできました。
+                今後は、セキュリティも意識したWebアプリケーション開発にも携わりたいと考えています。
             </p>
         </section>
 
@@ -110,6 +112,18 @@
                 </div>
             </div>
 
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon"><i class="devicon-cplusplus-plain colored"></i></span>
+                    <h4 class="skill-name">C++</h4>
+                </div>
+                <p class="skill-desc">・競技プログラミング (趣味)</p>
+                <div class="skill-level">
+                    <span class="skill-level-label">熟達度</span>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="--fill: 60%"></div></div>
+                    <span class="skill-level-text">中級</span>
+                </div>
+            </div>
 
             <div class="skill-card">
                 <div class="skill-header">
@@ -179,7 +193,7 @@
                 <img src="./image/horse-game-top.png" alt="競馬ゲームのスクリーンショット" loading="lazy" />
             </div>
             <div class="work-body">
-                <h3 class="work-title">競馬ゲーム(製作中)</h3>
+                <h3 class="work-title">競馬ゲーム(製作中4/13現在)</h3>
                 <p class="work-desc">Reactの学習を兼ねた簡単なゲームです。簡素かつ直感的なデザインを追求した点が特徴です。</p>
                 <div class="work-tags">
                 <span class="work-tag">React</span>
